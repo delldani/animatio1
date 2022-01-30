@@ -6,18 +6,16 @@ export const  App = ()=>{
 
   React.useEffect(()=>{
       let options = {
-        root: document.querySelector('.main'),
+        root: null,
         rootMargin: '0px',
-        threshold:0.5,
+        threshold:[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1]
       }
       
       let observer = new IntersectionObserver((entries,observer)=>{
-        entries.forEach((entrie)=>{
-          console.log(entrie.intersectionRatio);
-        }, options);
-      });
+        entries.forEach((entrie)=>{console.log(entrie.intersectionRatio)});
+      }, options);
 
-      let target = document.querySelector('.text');
+      let target = document.querySelector('.picture');
       observer.observe(target as Element);
   },[])
 
