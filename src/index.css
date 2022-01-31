@@ -17,14 +17,18 @@ body {
   padding-top: 50px;
   background-color: rgb(17, 22, 8);
   color: aliceblue;
-  z-index: 2;
-  position: relative;
   line-height: 2rem;
   font-size: 1.5rem;
 }
 .puffer {
   width: 100vw;
   height: 100vh;
+  background-color: black;
+  opacity: 0;
+}
+
+.wrapper {
   position: absolute;
   top: 0;
+  z-index: 2;
 }
