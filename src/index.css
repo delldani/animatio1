@@ -1,24 +1,30 @@
 body {
   margin: 0;
-
 }
 
-.main{
+.main {
 }
-.picture{
-width: 100vw;
-height: 100vh;
-position: sticky;
-top: 0;
+.picture {
+  width: 100vw;
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
-.text{
-  padding: 15%;
-padding-top: 50px;
+.text {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 50px;
   background-color: rgb(17, 22, 8);
   color: aliceblue;
   z-index: 2;
   position: relative;
   line-height: 2rem;
   font-size: 1.5rem;
+}
+.puffer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
 }
