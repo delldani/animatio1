@@ -7,7 +7,7 @@ body {
 .picture {
   width: 100vw;
   height: 100vh;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
